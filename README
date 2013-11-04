@@ -1,0 +1,12 @@
+This is my second assignment for Operating Systems Design 198:416
+
+The purpose of this project was to familiarize students with creating and implementing Character Drivers. We created a Control Device cryptctl to create encryption and decryption subdrivers through ioctl() calls. Details about the assignment can be found in assignment.pdf
+
+To insert the cryptctl device we assume the user has root privileges and has run the Makefile.
+You can call:
+     "insmod cryptctl.ko" to insert the device to /dev/cryptctl
+     "rmmod cryptctl.ko" to remove the device from /dev
+To add the encryption/decryption subdrivers users should work with the "app" program created with the Makefile.
+     "./app" will provide an explanation about how it can be used
+
+For further details about using the "app" program or about the Char Driver's implementation refer to report.pdf
